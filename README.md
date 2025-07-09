@@ -1,69 +1,55 @@
-# React + TypeScript + Vite
+# GuessThatWord
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📸 Náhled hry
 
-Currently, two official plugins are available:
+![GuessThatWord Preview](#)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*Moderní Wordle-like hra s podporou češtiny a angličtiny, animacemi konfet a tmavým designem*
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Rychlé spuštění
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+git clone https://github.com/username/guess-that-word.git
+cd guess-that-word
+npm install
+npm run dev
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Hlavní funkce
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 🌍 **Dva jazyky** - Čeština a angličtina
+- 🎊 **Animace konfet** - Oslavy při výhře
+- 🎯 **Barevná zpětná vazba** - Zelená/žlutá/červená
+- 📊 **Bodování** - Sledování úspěšnosti
+- ⌨️ **Chytrá navigace** - Automatický přechod mezi políčky
+- 🎨 **Tmavý design** - Moderní gradient pozadí
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Technologie
+
+- **React 18** + **TypeScript**
+- **Vite** - Rychlý build nástroj
+- **Tailwind CSS** - Stylování
+- **Canvas Confetti** - Animace
+
+## 🎮 Pravidla hry
+
+1. **Hádej 5písmenná slova** - Máš 6 pokusů
+2. **Barevné nápovědy**:
+   - 🟢 **Zelená** = Správné písmeno na správném místě
+   - 🟡 **Žlutá** = Správné písmeno na špatném místě  
+   - 🔴 **Červená** = Písmeno není ve slově
+3. **Vyber jazyk** - Přepínání mezi EN/CZ
+4. **Sleduj skóre** - Body za výhry
+
+## 📋 Dostupné příkazy
+
+```bash
+npm install
+npm run dev
+npm run build
+npm run preview
+npm run lint
 ```
