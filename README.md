@@ -13,7 +13,7 @@
 ## 🚀 Rychlé spuštění
 
 ```bash
-git clone https://github.com/username/guess-that-word.git
+git clone https://github.com/bobcermak/guess-that-word.git
 
 cd guess-that-word
 
