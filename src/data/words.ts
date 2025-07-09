@@ -1,0 +1,43 @@
+//List
+export const wordsEN: string[] = [
+    "apple", "house", "water", "plant", "child",
+    "light", "music", "green", "party", "small",
+    "right", "money", "story", "world", "heart",
+    "phone", "table", "happy", "voice", "table",
+    "think", "dream", "river", "laugh", "night",
+    "watch", "black", "light", "plant", "place",
+    "class", "woman", "manly", "group", "phone",
+    "glass", "train", "early", "sweet", "bread",
+    "short", "young", "large", "clean", "quiet",
+    "dance", "funny", "drink", "fight", "front",
+    "power", "skill", "smile", "study", "teach",
+    "thank", "color", "drive", "heart", "laugh",
+    "party", "phone", "place", "plant", "point",
+    "proud", "raise", "reach", "river", "round",
+    "small", "sound", "space", "spend", "start",
+    "state", "still", "story", "study", "teach",
+    "thing", "think", "three", "today", "trust",
+    "truth", "visit", "voice", "watch", "woman",
+    "world", "young", "youth", "laugh", "think"
+];
+export const wordsCZ: string[] = [
+    "strom", "plzen", "trava", "jazyk", "kamen",
+    "patek", "skola", "mesto", "radar", "cislo",
+    "hrady", "slova", "mysli", "triko", "zitra",
+    "pijou", "cesta", "tichy", "letos", "brana",
+    "kulka", "vlada", "roste", "lepsi", "tezky",
+    "sedel", "hlasy", "tesim", "senat", "barva",
+    "dvere", "karty", "klidu", "prace", "prava",
+    "krize", "laska", "hraje", "krava", "uznal",
+    "vlasy", "zivot", "kluci", "dobra", "matka",
+    "nocni", "kocka", "hudba", "osoba", "tabor",
+    "velky", "hlina", "skoda", "tvare", "teplo",
+    "vitez", "trida", "dolni", "sever", "zelen",
+    "listy", "hlava", "stary", "kabel", "email",
+    "kolej", "hasic", "sirka", "bunda", "vyska",
+    "kufry", "cisar", "kloub", "tucne", "trubi",
+    "vidli", "malba", "sedla", "spadl", "mysli",
+    "lapal", "zapal", "trist", "mraky", "vlnka",
+    "nalez", "lehat", "pijak", "klani", "snezi",
+    "mluvi", "mavat", "trous", "prska"
+];
