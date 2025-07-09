@@ -10,7 +10,7 @@
 
 ---
 
-*Moderní Wordle-like hra s podporou češtiny a angličtiny, animacemi konfet a tmavým designem*
+**GuessThatWord** je pokročilá implementace populární hádací hry slov postavená na moderním React + TypeScript stacku. Projekt demonstruje best practices ve frontend developmentu včetně type-safe programování, komponenty-driven architektury a responsivního designu.
 
 ---
 
