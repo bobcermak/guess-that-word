@@ -30,11 +30,7 @@ export const addColors = (inputs: string[], word: string): string[] => {
 export const isWon = (items: string[]): boolean => {
     const yellow: string = "#FFFF00";
     const red: string = "#FF0000";
-    let isGameWon: boolean = true;
-    items.forEach((item, i) => {
-        if (items.includes(yellow) || items.includes(red)) isGameWon = false;
-    });
-    return isGameWon;
+    return !items.includes(yellow) && !items.includes(red);
 }
 //Function to pick words based on selected language
 export const pickLanguageWords = (language: string, wordsEN: string[], wordsCZ: string[]): string[] => {

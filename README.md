@@ -1,16 +1,12 @@
 # GuessThatWord
 
-## 📸 Náhled hry
+**GuessThatWord** je pokročilá implementace populární hádací hry slov postavená na moderním React + TypeScript stacku. Projekt demonstruje best practices ve frontend developmentu včetně type-safe programování, komponenty-driven architektury a responsivního designu.
 
 ![guess-that-word-image](/public/images/guess-that-word-image.png)
 
 ---
 
-[Náhled hry](#)
-
----
-
-**GuessThatWord** je pokročilá implementace populární hádací hry slov postavená na moderním React + TypeScript stacku. Projekt demonstruje best practices ve frontend developmentu včetně type-safe programování, komponenty-driven architektury a responsivního designu.
+[Náhled hry](https://bobcermak.github.io/guess-that-word/)
 
 ---
 
