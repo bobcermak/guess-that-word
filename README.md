@@ -2,7 +2,13 @@
 
 ## 📸 Náhled hry
 
-![GuessThatWord Preview](#)
+![guess-that-word-image](/public/images/guess-that-word-image.png)
+
+---
+
+[Náhled hry](#)
+
+---
 
 *Moderní Wordle-like hra s podporou češtiny a angličtiny, animacemi konfet a tmavým designem*
 
@@ -12,10 +18,12 @@
 
 ```bash
 git clone https://github.com/username/guess-that-word.git
-cd guess-that-word
-npm install
-npm run dev
 
+cd guess-that-word
+
+npm install
+
+npm run dev
 ```
 
 ## ✨ Hlavní funkce
@@ -48,8 +56,12 @@ npm run dev
 
 ```bash
 npm install
+
 npm run dev
+
 npm run build
+
 npm run preview
+
 npm run lint
 ```
