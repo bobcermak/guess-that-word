@@ -12,13 +12,27 @@
 
 ## 🚀 Rychlé spuštění
 
+### 1. Naklonuj repozitář
+
 ```bash
 git clone https://github.com/bobcermak/guess-that-word.git
+```
 
+### 2. Přejdi do složky projektu
+
+```bash
 cd guess-that-word
+```
 
+### 3. Nainstaluj závislosti
+
+```bash
 npm install
+```
 
+### 4. Spusť vývojový server
+
+```bash
 npm run dev
 ```
 
@@ -50,14 +64,32 @@ npm run dev
 
 ## 📋 Dostupné příkazy
 
+### 🔧 Instalace závislostí
+
 ```bash
 npm install
+```
 
+### 🚀 Spuštění vývojového serveru
+
+```bash
 npm run dev
+```
 
+### 📦 Build pro produkci
+
+```bash
 npm run build
+```
 
+### 👁️ Náhled produkční verze
+
+```bash
 npm run preview
+```
 
+### 🔍 Kontrola kódu (ESLint)
+
+```bash
 npm run lint
 ```
