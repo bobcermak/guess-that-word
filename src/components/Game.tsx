@@ -31,6 +31,23 @@ const Game = () => {
             if (nextInput) nextInput.focus();
         }
     }
+    //Function to handle keyboard events
+    const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>, index: number): void => {
+        let nextInput: HTMLInputElement | null = null;
+        switch (event.key) {
+            case "Delete":
+            case "Backspace":
+            case "ArrowLeft":
+                if (index > 0) nextInput = inputRefs.current[currentAttempt][index - 1];
+                break;
+            case "ArrowRight":
+                if (index < 4) nextInput = inputRefs.current[currentAttempt][index + 1];
+                break;
+            default:
+                break;
+        }
+        if (nextInput) nextInput.focus();
+    }
     //Function to handle play again
     const handlePlayAgain = (): void => {
         setIsButtonClicked(true);
@@ -96,7 +113,7 @@ const Game = () => {
                     <div className="flex justify-center gap-2" key={rowIndex}>
                         {attempt.map((input, colIndex) => (
                             <input
-                                className={`w-14 h-14 text-center text-2xl font-mono font-bold rounded-md border border-gray-500 shadow-lg focus:outline-none transition-all duration-200 ${ rowIndex === currentAttempt && !isGameWon ? "bg-white text-black" : "bg-gray-800 text-white" }`} id={`${rowIndex}-${colIndex}`} key={colIndex} ref={(el) => { inputRefs.current[rowIndex][colIndex] = el; }}  type="text" maxLength={1} value={input} disabled={rowIndex !== currentAttempt || isGameWon} onChange={(event) => handleInputChange(event, colIndex)} style={{ backgroundColor: allColors[rowIndex]?.[colIndex] || (rowIndex === currentAttempt ? "" : "#1f2937"), color: allColors[rowIndex]?.[colIndex] ? "black" : rowIndex === currentAttempt ? "black" : "white" }}/> 
+                                className={`w-14 h-14 text-center text-2xl font-mono font-bold rounded-md border border-gray-500 shadow-lg focus:outline-none transition-all duration-200 ${ rowIndex === currentAttempt && !isGameWon ? "bg-white text-black" : "bg-gray-800 text-white" }`} id={`${rowIndex}-${colIndex}`} key={colIndex} ref={(el) => { inputRefs.current[rowIndex][colIndex] = el; }}  type="text" maxLength={1} value={input} disabled={rowIndex !== currentAttempt || isGameWon} onChange={(event) => handleInputChange(event, colIndex)} onKeyDown={(event) => handleKeyDown(event, colIndex)} style={{ backgroundColor: allColors[rowIndex]?.[colIndex] || (rowIndex === currentAttempt ? "" : "#1f2937"), color: allColors[rowIndex]?.[colIndex] ? "black" : rowIndex === currentAttempt ? "black" : "white" }}/> 
                             ))}
                     </div>
                     ))}
