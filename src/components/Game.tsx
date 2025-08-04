@@ -104,23 +104,23 @@ const Game = () => {
         if (isButtonClicked) resetGame();
     }, [isButtonClicked, resetGame]);
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white px-4">
+        <div className="min-h-screen py-8 px-auto flex items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white px-4">
             <div className="text-center space-y-8">
                 <Languages selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage}/>
                 <h1 className="text-4xl font-bold tracking-wide font-mono text-green-400 drop-shadow-md">GuessThatWord</h1>
-                <div className="flex flex-col gap-4">
+                <div className={`flex flex-col gap-4 ${isGameWon || isGameOver ? "hidden" : ""}`}>
                     {allInputs.map((attempt, rowIndex) => (
                     <div className="flex justify-center gap-2" key={rowIndex}>
-                        {attempt.map((input, colIndex) => (
-                            <input
+                            {attempt.map((input, colIndex) => (
+                                <input
                                 className={`w-14 h-14 text-center text-2xl font-mono font-bold rounded-md border border-gray-500 shadow-lg focus:outline-none transition-all duration-200 ${ rowIndex === currentAttempt && !isGameWon ? "bg-white text-black" : "bg-gray-800 text-white" }`} id={`${rowIndex}-${colIndex}`} key={colIndex} ref={(el) => { inputRefs.current[rowIndex][colIndex] = el; }}  type="text" maxLength={1} value={input} disabled={rowIndex !== currentAttempt || isGameWon} onChange={(event) => handleInputChange(event, colIndex)} onKeyDown={(event) => handleKeyDown(event, colIndex)} style={{ backgroundColor: allColors[rowIndex]?.[colIndex] || (rowIndex === currentAttempt ? "" : "#1f2937"), color: allColors[rowIndex]?.[colIndex] ? "black" : rowIndex === currentAttempt ? "black" : "white" }}/> 
                             ))}
                     </div>
                     ))}
                 </div>
-                <p className="text-2xl font-mono font-bold">Your score is: {playerScore}</p>
-                <p className={`text-xl font-mono font-bold ${isGameOver ? "block" : "hidden"}`}>The correct word was: <span className="text-[#FF0000]">{currentWord}</span></p>
-                <button className={`text-2xl font-mono font-bold ${isGameWon ? "bg-[#00FF00] hover:text-[#00FF00]" : "bg-[#FF0000] hover:text-[#FF0000]"} hover:bg-[#FFFFFF] text-[#FFFFFF] transition-[bg, color] ease-in-out duration-250 py-3 px-6 rounded-3xl cursor-pointer ${(isGameWon || isGameOver) ? "inline-block" : "hidden"}`} onClick={() => handlePlayAgain()}>Play again!</button>
+                <p className="text-2xl m-0 font-mono font-bold">{selectedLanguage === "EN" ? "Your score is: " : "Vaše skóre je: "}{playerScore}</p>
+                <p className={`text-xl mt-8 font-mono font-bold ${isGameOver ? "block" : "hidden"}`}>The correct word was: <span className="text-[#FF0000]">{currentWord}</span></p>
+                <button className={`text-2xl font-mono font-bold ${isGameWon ? "bg-[#00FF00] hover:text-[#00FF00]" : "bg-[#FF0000] hover:text-[#FF0000]"} hover:bg-[#FFFFFF] text-[#FFFFFF] transition-[bg, color] ease-in-out duration-250 py-3 px-6 rounded-3xl cursor-pointer ${(isGameWon || isGameOver) ? "inline-block" : "hidden"}`} onClick={() => handlePlayAgain()}>{selectedLanguage === "EN" ? "Play again!" : "Hrát znovu!"}</button>
             </div>
         </div>
     );
