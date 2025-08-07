@@ -18,7 +18,8 @@ export const wordsEN: string[] = [
     "state", "still", "story", "study", "teach",
     "thing", "think", "three", "today", "trust",
     "truth", "visit", "voice", "watch", "woman",
-    "world", "young", "youth", "laugh", "think"
+    "world", "young", "youth", "laugh", "think",
+    "paper"
 ];
 export const wordsCZ: string[] = [
     "strom", "plzen", "trava", "jazyk", "kamen",
@@ -39,5 +40,5 @@ export const wordsCZ: string[] = [
     "vidli", "malba", "sedla", "spadl", "mysli",
     "lapal", "zapal", "trist", "mraky", "vlnka",
     "nalez", "lehat", "pijak", "klani", "snezi",
-    "mluvi", "mavat", "trous", "prska"
+    "mluvi", "mavat", "trous", "prska", "papir"
 ];

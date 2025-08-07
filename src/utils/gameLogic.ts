@@ -36,3 +36,11 @@ export const isWon = (items: string[]): boolean => {
 export const pickLanguageWords = (language: string, wordsEN: string[], wordsCZ: string[]): string[] => {
     return language === "EN" ? wordsEN : wordsCZ;
 }
+//Function to check if the word is in the list
+export const isTheRealWord = (word: string[], wordsList: string[]): boolean => {
+    let enteredWord: string = "";
+    word.forEach((letter) => {
+        enteredWord += letter;
+    });
+    return wordsList.includes(enteredWord.toLowerCase());
+}
