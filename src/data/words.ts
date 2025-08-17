@@ -59,9 +59,9 @@ export const wordsCZ: string[] = [
     "sipas", "sipan", "sipka", "sirak", "sirna", "sitka", "sitko", "sitna", "sitov", "sivan",
     "sivka", "skala", "skeet", "skica", "sklon", "skoda", "skoln", "skota", "skout", "skran",
     "skrek", "skrin", "skrit", "skryt", "skuba", "skuce", "skuci", "skuln", "skupn", "skusa",
-    "skuta", "skutk", "skutn", "skutv", "skuty", "snaha", "snezi", "sobot",
-    "sokol", "solit", "sonek", "sopka", "spona", "sprav", "stary", "steak", "stein", "stern",
-    "stick", "stift", "stina", "stisk", "stity", "stoch", "stoha", "stole", "stolek", "stoly",
-    "stoma", "stono", "stopa", "stopek", "stopy", "stora", "stork", "storm", "story", "stroj",
-    "strop", "stupa", "stupy", "sture", "sturi", "stury", "styka", "styla", "stylu", "styly"
+    "skuta", "skutk", "skutn", "skutv", "skuty", "snaha", "snezi", "sobot", "sokol", "solit",
+    "sonek", "sopka", "spona", "sprav", "stary", "steak", "stein", "stern", "stick", "stift",
+    "stina", "stisk", "stity", "stoch", "stoha", "stole", "stolek", "stoly", "stoma", "stono",
+    "stopa", "stopek", "stopy", "stora", "stork", "storm", "story", "stroj", "strop", "stupa",
+    "stupy", "sture", "sturi", "stury", "styka", "styla", "stylu", "styly"
 ];
