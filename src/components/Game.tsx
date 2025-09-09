@@ -122,7 +122,7 @@ const Game = () => {
     return (
         <div className="min-h-screen py-8 px-auto flex items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] text-white px-4">
             <div className="text-center space-y-8">
-                <Languages selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage}/>
+                <Languages language={selectedLanguage} languageChange={(language) => setSelectedLanguage(language)}/>
                 <h1 className="text-4xl font-bold tracking-wide font-mono text-green-400 drop-shadow-md">GuessThatWord</h1>
                 <div className={`flex flex-col gap-4 ${isGameWon || isGameOver ? "hidden" : ""}`}>
                     {allInputs.map((attempt, rowIndex) => (
