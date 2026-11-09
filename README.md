@@ -54,15 +54,15 @@ npm run dev
 
 ## 🎮 Pravidla hry
 
-1. **Hádej 5písmenná slova** – Máš 6 pokusů  
+1. **Hádej 5písmenná slova** - Máš 6 pokusů  
 2. **Barevné nápovědy**:  
    - 🟢 **Zelená** = Správné písmeno na správném místě  
    - 🟡 **Žlutá** = Správné písmeno na špatném místě  
    - 🔴 **Červená** = Písmeno není ve slově  
 3. **Neplatná slova? Hezky se to zavlní!**  
-   Pokud napíšeš slovo, které není v oficiálním seznamu, vstupní políčka se jemně zavlní – dá ti to najevo, že tohle slovo systém neuznává. Zkus jiné!
-4. **Vyber jazyk** – Přepínej mezi EN/CZ  
-5. **Sleduj skóre** – Získávej body za výhry
+   Pokud napíšeš slovo, které není v oficiálním seznamu, vstupní políčka se jemně zavlní - dá ti to najevo, že tohle slovo systém neuznává. Zkus jiné!
+4. **Vyber jazyk** - Přepínej mezi EN/CZ  
+5. **Sleduj skóre** - Získávej body za výhry
 
 ## 📋 Dostupné příkazy
 
